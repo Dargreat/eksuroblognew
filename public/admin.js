@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Load all posts
 async function loadPosts() {
   // Replace the local endpoint with the Vercel URL
-  const response = await fetch('https://eksubroblog1.vercel.app/api/posts');  // Vercel API endpoint
+  const response = await fetch('https://eksuroblognew.vercel.app/api/posts');  // Vercel API endpoint
   if (!response.ok) {
     console.error('Failed to fetch posts:', response.statusText);
     return;
