@@ -1,4 +1,4 @@
-import dbConnect from '../../config/db';  // Go back two levels
+import dbConnect from './config/db';  // Go back two levels
 
 import Post from '../models/Post';
 
