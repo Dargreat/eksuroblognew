@@ -47,7 +47,7 @@ document.getElementById("postForm").addEventListener("submit", async (e) => {
   formData.append("content", content);
   if (image) formData.append("image", image);
 
-  const url = id ? `https://eksubroblog1.vercel.app/api/posts/${id}` : 'https://eksubroblog1.vercel.app/api/posts';  // Update to Vercel URL
+  const url = id ? `https://eksuroblognew.vercel.app/api/posts/${id}` : 'https://eksuroblognew.vercel.app/api/posts';  // Update to Vercel URL
   const method = id ? "PUT" : "POST";
 
   await fetch(url, { method, body: formData });
@@ -60,7 +60,7 @@ document.getElementById("postForm").addEventListener("submit", async (e) => {
 // Delete a post
 async function deletePost(id) {
   if (confirm("Are you sure you want to delete this post?")) {
-      await fetch(`https://eksubroblog1.vercel.app/api/posts/${id}`, { method: "DELETE" });  // Vercel URL
+      await fetch(`https://eksuroblognew.vercel.app/api/posts/${id}`, { method: "DELETE" });  // Vercel URL
       loadPosts();
 }
 }
